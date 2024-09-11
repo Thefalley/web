@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Foto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Imagen Seleccionada</h1>
+    <div class="image-container">
+        <img id="selectedImage" alt="Imagen seleccionada">
+    </div>
+
+    <script>
+        // Cargar la imagen seleccionada de la galería
+        const selectedImage = localStorage.getItem('selectedImage');
+        if (selectedImage) {
+            document.getElementById('selectedImage').src = selectedImage;
+        }
+    </script>
+</body>
+</html>
