@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subir Fotos</title>
+    <title>Subir y Compartir Fotos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Subir y Ver Fotos</h1>
+    <h1>Subir y Compartir Fotos</h1>
 
     <!-- Formulario para subir imágenes -->
     <form id="uploadForm">
@@ -20,6 +19,21 @@
 
     <!-- Galería de imágenes -->
     <div id="gallery" class="gallery"></div>
+
+    <!-- Contenedor de opciones -->
+    <div id="imageOptions" style="display: none;">
+        <h2>Opciones para compartir</h2>
+        <button id="downloadImage">Descargar imagen</button>
+        <button id="shareImage">Copiar enlace para compartir</button>
+        <p id="shareMessage" style="color:green; display:none;">¡Enlace copiado al portapapeles!</p>
+
+        <h3>Compartir en Redes Sociales:</h3>
+        <a id="twitterShare" target="_blank">Compartir en Twitter</a>
+        <br>
+        <a id="facebookShare" target="_blank">Compartir en Facebook</a>
+        <br>
+        <a id="instagramShare" target="_blank">Abrir Instagram (requiere la app)</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
